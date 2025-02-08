@@ -1,4 +1,5 @@
 import React from 'react'
+import { Platform } from 'react-native'
 import { useDrawerProgress } from '@react-navigation/drawer'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import Animated, {
@@ -29,7 +30,12 @@ const DrawerScreenWrapper: React.FC<DrawerScreenWrapperProps> = props => {
           )}deg`,
         },
         {
-          translateX: interpolate(progress.value, [0, 1], [0, 60], 'clamp'),
+          translateX: interpolate(
+            progress.value,
+            [0, 1],
+            [0, Platform.OS === 'ios' ? 60 : 100],
+            'clamp',
+          ),
         },
         {
           translateY: interpolate(

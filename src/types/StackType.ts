@@ -5,7 +5,7 @@ import {
 } from '@react-navigation/stack'
 
 export enum StackScreenNames {
-  HOME = 'HOME',
+  HOME = 'HOME 1',
   SCREEN_1 = 'SCREEN_1',
   SCREEN_2 = 'SCREEN_2',
 }

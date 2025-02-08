@@ -8,7 +8,7 @@ import Animated, {
   useAnimatedStyle,
   interpolate,
 } from 'react-native-reanimated'
-import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
 import Colors from '../../utils/Colors'
 import Button from '../../components/Button'
@@ -43,17 +43,16 @@ const styles = StyleSheet.create({
 
 const DrawerContent = memo<DrawerContentComponentProps>(props => {
   const progress = useDrawerProgress()
-  const insets = useSafeAreaInsets()
 
   const style = useAnimatedStyle(
     () => ({
-      marginTop: insets.top,
+      marginTop: 62,
       paddingLeft: 20,
       transform: [
-        { translateY: interpolate(progress.value, [0, 1], [-insets.top, 0]) },
+        { translateY: interpolate(progress.value, [0, 1], [-62, 0]) },
       ],
     }),
-    [insets.top],
+    [],
   )
 
   const drawerItemPressed = useCallback(
