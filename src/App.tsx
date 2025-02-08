@@ -1,5 +1,5 @@
 import React from 'react'
-import MainNavigator from './router/MainNavigator'
+import MainNavigator from './navigators/MainNavigator'
 
 interface AppProps {}
 
