@@ -1,28 +1,19 @@
 # Gerald Assignment Demo
 
-<table>
-   <tr>
-      <th>Android Demo</th>
-      <th>iOS Demo</th>
-   </tr>
-  <tr>
-    <td>
-      <video width="320" height="240" controls>
-        <source src="demo/android_demo.mov" type="video/mov">
-      </video>
-    </td>
-    <td>
-      <video width="320" height="240" controls>
-        <source src="demo/ios_demo.mov" type="video/mov">
-      </video>
-    </td>
-  </tr>
-</table>
+###  iOS Demo
+
+https://github.com/user-attachments/assets/bab6a443-f2be-4188-b8cf-e4ece49e6434
+
+
+
+### 📲 Android Demo
+https://github.com/user-attachments/assets/21fd1d4f-b039-4bf1-bc8f-d7d0ad114afb
 
 <br>
 
 # Project Structure
-```src
+```
+src
 |-- App.tsx
 |-- assets
 |   |-- icons
